@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+#flex-item-left {
+  background-color: #1c1d21; /* Dark color for the left column */
+  flex: 2; /* 2/5 of the space */
+  display: flex; /* Make .flex-item-left a Flex container */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  text-align: center;
+}
+#flex-item-right {
+  background-color: #9c6fe4; /* Purple color for the right column */
+  flex: 3; /* 3/5 of the space */
+}
+#loginArea {
+  width: 50%;
+  height: 50%;
+}
+#loginTitle {
+  font-size: 15px;
+  color: white;
+  font-family: Arial;
+  text-align: left;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+#simple-textbox {
+    margin-top: 15px;
+    width: 100%; /* Width of the textbox */
+    padding: 8px 0px; /* Top and bottom padding 8px, left and right padding 12px */
+    border: 1px solid transparent; /* Light gray border */
+    border-bottom: 1px solid #3e3f46;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    background-color: #1c1d21; /* Text color */
+    color: white;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+}
+  
+#simple-textbox:focus {
+    border-color: transparent;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#login-button{
+    background-color: #9c6fe4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 35px;
+    width: 100%;
+    margin-top: 25px;
+}
