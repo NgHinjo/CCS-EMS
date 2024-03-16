@@ -155,7 +155,20 @@ body {
   opacity: 70%;
   font-family: Poppins;
 }
-#simple-textbox {
+#username-textbox {
+  font-family: "Poppins";
+  margin-top: 10px;
+  width: 100%; /* Width of the textbox */
+  padding: 8px 0px; /* Top and bottom padding 8px, left and right padding 12px */
+  border: 1px solid transparent; /* Light gray border */
+  border-bottom: 1px solid #3e3f46;
+  border-radius: 4px; /* Rounded corners */
+  font-size: 13px; /* Text size */
+  background-color: #1c1d21; /* Text color */
+  color: white;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+}
+#password-textbox {
   font-family: "Poppins";
   margin-top: 10px;
   width: 100%; /* Width of the textbox */
