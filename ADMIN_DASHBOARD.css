@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
+.flex-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+#flex-item-left {
+  background-color: white; /* Dark color for the left column */
+  flex: 1; /* 250pixels of the space */
+  display: flex; /* Make .flex-item-left a Flex container */
+  justify-content: center; /* Center children horizontally */
+  text-align: center;
+}
+#flex-item-right {
+  background-color: white; /* Purple color for the right column */
+  flex: 6;
+  display: flex;
+  justify-content: center; /* Center children vertically */
+}
+#menu-area {
+  margin: 5%;
+  background-color: #9c6fe4;
+  border-radius: 15px;
+  width: 100%;
+}
+#ccs-logo {
+  border-radius: 100%;
+  width: 80px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.menu-buttons {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 350;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the space between the SVG and the text */
+  padding: 10px;
+  width: 100%; /* or a specific width */
+  height: 50px;
+  opacity: 75%;
+}
+
+.menu-buttons:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px white inset;
+}
+
+.menu-buttons svg {
+  flex-shrink: 0; /* Prevents the SVG from shrinking */
+}
+#announcement-button{
+    opacity: 100%;
+    padding: 20px;
+}
