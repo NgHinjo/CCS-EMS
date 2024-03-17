@@ -24,12 +24,12 @@ body {
   justify-content: center; /* Center children vertically */
 }
 #loginArea {
-  margin: 25%;
+  margin: 20%;
 }
 
 #ccs-logo {
   border-radius: 100%;
-  width: 170px;
+  width: 130px;
   height: auto;
 }
 
@@ -81,7 +81,18 @@ body {
 #simple-textbox:focus {
   border-color: transparent;
 }
-
+#rememberme{
+  background-color: transparent;
+  display: block;
+  
+  margin: 10px 0;
+  justify-content: left;
+  display: flex;
+  align-items: center;
+}
+#rememberme-checkbox{
+  cursor: pointer;
+}
 #login-button {
   font-family: "Poppins";
   font-size: 13px;
@@ -92,7 +103,7 @@ body {
   text-align: center;
   height: 40px;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 #login-button:hover {
   cursor: pointer;
