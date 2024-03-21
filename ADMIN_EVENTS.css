@@ -57,10 +57,10 @@ body {
 .menu-buttons svg {
   flex-shrink: 0;
 }
-#announcement-button{
-    opacity: 100%;
+#events-button {
+  opacity: 100%;
 }
-#dashboard-area{
+#dashboard-area {
   margin: 1%;
   background-color: transparent;
   width: 100%;
@@ -70,20 +70,11 @@ body {
   justify-content: space-between;
   background-color: transparent;
 }
-#top-area-button{
+#top-area-space {
   flex: 8;
   display: flex;
   justify-content: left;
   align-items: end;
-}
-#create-announcement-button {
-  background-color: #9c6fe4;
-  border-radius: 7px;
-  border: none;
-  padding: 10px;
-  font-family: "Poppins";
-  color: white;
-  font-size: 13px;
 }
 
 #top-area-profile {
@@ -104,14 +95,14 @@ body {
   margin-left: 10px;
   font-family: "Poppins";
 }
-#top-area-profile-username{
+#top-area-profile-username {
   font-weight: 500;
   font-size: 13px;
-  color: black;    
+  color: black;
 }
-#top-area-profile-accessname{
+#top-area-profile-accessname {
   font-size: 10px;
-  color: black; 
+  color: black;
   opacity: 50%;
 }
 #top-area-notification {
@@ -120,15 +111,39 @@ body {
   justify-content: center;
   margin: 0 30px;
 }
-#content-area{
+#content-area {
   height: auto;
   width: auto;
   display: flex;
-  margin-top: 20px;
+  flex-direction: column;
+  margin-top: 10px;
 }
-#announcement-area-box{
+#event-merch-text {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+}
+#event-button-area{
+    display: flex;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+}
+#event-archive-button {
   background-color: #9c6fe4;
-  border-radius: 20px;
-  height: 200px;
-  width: 100%;
+  border-radius: 7px;
+  border: none;
+  padding: 10px;
+  font-family: "Poppins";
+  color: white;
+  font-size: 13px;
 }
+#approve-request-button {
+    background-color: #9c6fe4;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-family: "Poppins";
+    color: white;
+    font-size: 13px;
+  }
