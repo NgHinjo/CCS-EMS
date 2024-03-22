@@ -192,5 +192,70 @@ body {
   border: none;
   margin-top: 10px;
 }
+
 /*CALENDAR CSS*/
 
+/*MODAL WINDOW*/
+.modal {
+  display: none;
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10px auto;
+  padding: 40px;
+  border: 1px solid #888;
+  overflow: auto;
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #aaa;
+  text-decoration: none;
+}
+
+/*VIEW EVENT*/
+.event-image {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 100px 0
+}
+.modal-content::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* Attempt to make track background transparent */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #b1b4b8; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color on hover */
+}
