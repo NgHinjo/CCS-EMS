@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Events</title>
-    <link rel="stylesheet" href="ADMIN_EVENTS.css" />
+    <title>Admin - Users</title>
+    <link rel="stylesheet" href="ADMIN_USERS.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,9 +14,9 @@
   </head>
   <body>
     <div class="flex-container">
-      <div id="flex-item-left">
-        <div id="menu-area">
-          <img src="IMAGES/ccs_logo.png" alt="UCLM CCS Logo" id="ccs-logo" />
+      <div class="flex-item-left">
+        <div class="menu-area">
+          <img src="IMAGES/ccs_logo.png" alt="UCLM CCS Logo" class="ccs-logo" />
           <button class="menu-buttons">
             <svg
               width="18"
@@ -35,7 +35,7 @@
             </svg>
             Announcement
           </button>
-          <button class="menu-buttons" id="events-button">
+          <button class="menu-buttons">
             <svg
               width="18"
               height="18"
@@ -54,12 +54,13 @@
                 clip-rule="evenodd"
                 d="M17.997 7.004C17.71 7 17.417 7 17.119 7H10.88C10.037 7 9.21699 7 8.53799 7.091C7.77199 7.194 6.89799 7.445 6.17099 8.171C5.44399 8.898 5.19299 9.773 5.09099 10.539C4.99999 11.218 4.99999 12.037 4.99999 12.881V15.119C4.99999 15.412 4.99999 15.702 5.00399 15.984C4.94127 15.9812 4.8786 15.9775 4.81599 15.973C4.44299 15.943 4.07099 15.88 3.70899 15.708C3.08803 15.4118 2.58775 14.9112 2.29199 14.29C2.11999 13.93 2.05599 13.557 2.02699 13.184C2.0027 12.7578 1.9937 12.3309 1.99999 11.904V8.934C1.99999 8.048 1.99999 7.284 2.08199 6.672C2.16999 6.017 2.36899 5.388 2.87899 4.879C3.38899 4.369 4.01699 4.17 4.67199 4.082C5.28399 4 6.04799 4 6.93399 4H14.539C14.961 4 15.324 4 15.648 4.07C16.2061 4.19354 16.7173 4.47396 17.1214 4.87824C17.5255 5.28252 17.8057 5.79384 17.929 6.352C17.974 6.552 17.99 6.768 17.997 7.004Z"
                 fill="white"
+                fill-opacity="0.5"
               />
             </svg>
 
             Events
           </button>
-          <button class="menu-buttons">
+          <button class="menu-buttons"  class="users-button">
             <svg
               width="18"
               height="18"
@@ -70,6 +71,7 @@
               <path
                 d="M15.71 12.7096C16.6904 11.9383 17.406 10.8806 17.7572 9.68358C18.1085 8.4866 18.0779 7.2099 17.6698 6.0311C17.2617 4.85231 16.4963 3.83003 15.4801 3.10649C14.4639 2.38296 13.2474 1.99414 12 1.99414C10.7525 1.99414 9.53611 2.38296 8.51993 3.10649C7.50374 3.83003 6.73834 4.85231 6.33021 6.0311C5.92208 7.2099 5.89151 8.4866 6.24276 9.68358C6.59401 10.8806 7.3096 11.9383 8.29 12.7096C6.61007 13.3827 5.14428 14.499 4.04889 15.9396C2.95349 17.3801 2.26956 19.0909 2.07 20.8896C2.05555 21.021 2.06711 21.1538 2.10402 21.2807C2.14093 21.4075 2.20246 21.5259 2.28511 21.629C2.45202 21.8371 2.69478 21.9705 2.96 21.9996C3.22521 22.0288 3.49116 21.9514 3.69932 21.7845C3.90749 21.6176 4.04082 21.3749 4.07 21.1096C4.28958 19.1548 5.22168 17.3494 6.68822 16.0384C8.15475 14.7274 10.0529 14.0027 12.02 14.0027C13.9871 14.0027 15.8852 14.7274 17.3518 16.0384C18.8183 17.3494 19.7504 19.1548 19.97 21.1096C19.9972 21.3554 20.1144 21.5823 20.2991 21.7467C20.4838 21.911 20.7228 22.0011 20.97 21.9996H21.08C21.3421 21.9695 21.5817 21.8369 21.7466 21.6309C21.9114 21.4248 21.9881 21.162 21.96 20.8996C21.7595 19.0958 21.0719 17.3806 19.9708 15.9378C18.8698 14.4951 17.3969 13.3791 15.71 12.7096ZM12 11.9996C11.2089 11.9996 10.4355 11.765 9.77772 11.3255C9.11992 10.886 8.60723 10.2613 8.30448 9.53037C8.00173 8.79947 7.92251 7.9952 8.07686 7.21928C8.2312 6.44335 8.61216 5.73062 9.17157 5.17121C9.73098 4.6118 10.4437 4.23084 11.2196 4.0765C11.9956 3.92215 12.7998 4.00137 13.5307 4.30412C14.2616 4.60687 14.8863 5.11956 15.3259 5.77736C15.7654 6.43515 16 7.20851 16 7.99964C16 9.0605 15.5786 10.0779 14.8284 10.8281C14.0783 11.5782 13.0609 11.9996 12 11.9996Z"
                 fill="white"
+                
               />
             </svg>
 
@@ -111,22 +113,22 @@
           </button>
         </div>
       </div>
-      <div id="flex-item-right">
-        <div id="main-area">
-          <div id="top-area">
-            <div id="top-area-space"></div>
-            <div id="top-area-profile">
+      <div class="flex-item-right">
+        <div class="main-area">
+          <div class="top-area">
+            <div class="top-area-space"></div>
+            <div class="top-area-profile">
               <img
                 src="IMAGES/haerin.jpg"
-                id="top-area-profile-picture"
+                class="top-area-profile-picture"
                 alt="Profile Picture"
               />
-              <div id="top-area-profile-name">
-                <div id="top-area-profile-username">Kang Haerin</div>
-                <div id="top-area-profile-accessname">Admin</div>
+              <div class="top-area-profile-name">
+                <div class="top-area-profile-username">Kang Haerin</div>
+                <div class="top-area-profile-accessname">Admin</div>
               </div>
             </div>
-            <div id="top-area-notification">
+            <div class="top-area-notification">
               <svg
                 width="24"
                 height="24"
@@ -141,29 +143,48 @@
               </svg>
             </div>
           </div>
-          <div id="content-area">
-            <div class="flex-content-left">
-              <div class="flex-content-left-area">
-                <div id="event-merch-text">Events</div>
-                <div class="event-button-area">
-                  <button class="event-merch-button">Event Archive</button>
-                  <button class="event-merch-button">Approve Request</button>
-                  <button class="event-merch-button">Create Event</button>
-                </div>
-                <div class="event-merch-area"></div>
-                <div id="event-merch-text">
-                  Merchandise
-                  <div class="event-button-area">
-                    <button class="event-merch-button">Merch Archive</button>
-                    <button class="event-merch-button">Approve Merch</button>
-                  </div>
-                  <div class="event-merch-area"></div>
-                </div>
-              </div>
+          <div class="content-area">
+            <div class="users-text">
+              Users
             </div>
-            <div class="flex-content-right">
-              Basta kalendaryo ni dri ingi human
-            </div>
+            <table class="user-table-area">
+              <tr>
+                <th>Select □</th>
+                <th>Name</th>
+                <th>ID Number</th>
+                <th>Course</th>
+                <th>Access</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>□</td>
+                <td>Kang Haerin</td>
+                <td>22200516</td>
+                <td>CCS-Instructor</td>
+                <td>Admin</td>
+                <td>Enabled</td>
+                <td>⋯</td>
+              </tr>
+              <tr>
+                <td>□</td>
+                <td>Joemar M. Ygot</td>
+                <td>22203475</td>
+                <td>BSCS</td>
+                <td>Student</td>
+                <td>Enabled</td>
+                <td>⋯</td>
+              </tr>
+              <tr>
+                <td>□</td>
+                <td>Henry T. Tero</td>
+                <td>22206969</td>
+                <td>BSIT</td>
+                <td>Student</td>
+                <td>Enabled</td>
+                <td>⋯</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>

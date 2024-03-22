@@ -14,14 +14,14 @@ body {
   height: 100vh;
   width: 100vw;
 }
-#flex-item-left {
+.flex-item-left {
   background-color: white;
   flex: 1;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-#flex-item-right {
+.flex-item-right {
   background-color: white;
   flex: 6;
   display: flex;
@@ -30,13 +30,13 @@ body {
 
 /*LEFT MENU AREA*/
 
-#menu-area {
+.menu-area {
   margin: 5%;
   background-color: #9c6fe4;
   border-radius: 15px;
   width: 100%;
 }
-#ccs-logo {
+.ccs-logo {
   border-radius: 100%;
   width: 80px;
   height: auto;
@@ -66,36 +66,36 @@ body {
 .menu-buttons svg {
   flex-shrink: 0;
 }
-#events-button {
+#users-button {
   opacity: 100%;
 }
 
 /*MAIN AREA OF PAGE*/
 
-#main-area {
+.main-area {
   margin: 1%;
   background-color: transparent;
   width: 100%;
 }
-#top-area {
+.top-area {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
 }
-#top-area-space {
+.top-area-space {
   flex: 8;
   display: flex;
   justify-content: left;
   align-items: end;
 }
 
-#top-area-profile {
+.top-area-profile {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
 
-#top-area-profile-picture {
+.top-area-profile-picture {
   border-radius: 100%;
   width: 40px;
   height: 40px;
@@ -103,94 +103,60 @@ body {
   border: 2px solid #9c6fe4;
   box-shadow: 0 0 20px rgba(186, 66, 255, 0.8);
 }
-#top-area-profile-name {
+.top-area-profile-name {
   margin-left: 10px;
   font-family: "Poppins";
 }
-#top-area-profile-username {
+.top-area-profile-username {
   font-weight: 500;
   font-size: 13px;
   color: black;
 }
-#top-area-profile-accessname {
+.top-area-profile-accessname {
   font-size: 10px;
   color: black;
   opacity: 50%;
 }
-#top-area-notification {
+.top-area-notification {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 30px;
 }
-#content-area {  
+.content-area {  
   height: auto;
   width: auto;
   display: flex;
   margin-top: 10px;
   margin-right: 10px;
-}
-.flex-content-left{
-  flex: 8;
-  display: flex;
   flex-direction: column;
-  overflow-y: auto; /* Enable vertical scrolling within this container */
-  max-height: calc(100vh - 80px); /* Example: Adjust based on your layout needs */
 }
-.flex-content-left::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
-}
-
-.flex-content-left::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color of the track */
-  border-radius: 10px;
-}
-
-.flex-content-left::-webkit-scrollbar-thumb {
-  background: #b1b4b8; /* Color of the scrollbar itself */
-  border-radius: 10px;
-}
-
-.flex-content-left::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color of the scrollbar on hover */
-}
-.flex-content-left-area{
-  margin-right: 10px;
-}
-.flex-content-right{
-  flex: 2;
-  display: flex;
-  margin-left: 10px;
-}
-#event-merch-text {
+.users-text {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 600;
 }
-.event-button-area {
-  display: flex;
+.user-table-area{
+  font-family: "Poppins";  
+  border: 1px solid lightgray;
+  margin: 20px;
+  width: auto;
   height: auto;
-  width: 100%;
-  gap: 10px;
+  justify-content: left;
+  align-items: center;
+  border-spacing: 0px 10px;
 }
-.event-merch-button {
-  background-color: #22a6b3;
-  border-radius: 7px;
-  border: none;
-  padding: 10px;
-  font-family: "Poppins";
-  color: white;
+th{
+  border-bottom: 3px solid lightgray;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+td{
+  border-bottom: 2px solid rgb(233, 233, 233);
+  border-collapse: collapse;
   font-size: 13px;
 }
-.event-merch-area{
-  background-color: #95afc0;
-  display: flex;
-  height: 250px;
-  min-height: 250px; /* Ensure there's enough space for content */
-  width: 100%;
-  border-radius: 20px;
-  border: none;
-  margin-top: 10px;
-}
-/*CALENDAR CSS*/
-
+/*
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}*/
