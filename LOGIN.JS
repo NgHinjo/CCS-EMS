@@ -3,7 +3,7 @@ function buttonClicked() {
     var password = document.getElementById("password-textbox").value;
     if(username == "hatdog" && password == "gwapo"){
         alert("Proceed to Dashboard!");
-        window.location.href = 'ADMIN_DASHBOARD.html';
+        window.location.href = 'ADMIN_EVENTS.html';
     }
     else{
         alert("Invalid Credentials! Please try again.");

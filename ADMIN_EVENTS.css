@@ -148,7 +148,7 @@ body {
 }
 
 .flex-content-left::-webkit-scrollbar-thumb {
-  background: #b1b4b8; /* Color of the scrollbar itself */
+  background: #22a6b3; /* Color of the scrollbar itself */
   border-radius: 10px;
 }
 
@@ -200,6 +200,16 @@ body {
   width: 400px;
   height: auto;
   margin: 15px 10px;
+  border-radius: 10px;
+}
+.event-merch-area-card:hover{
+  cursor: pointer;
+  opacity: .75;
+}
+.event-merch-area-card-image{
+  height: auto;
+  width: 400px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -262,7 +272,7 @@ body {
 }
 
 .modal-content::-webkit-scrollbar-thumb {
-  background: #b1b4b8; /* Color of the scrollbar thumb */
+  background: #b1b8b1; /* Color of the scrollbar thumb */
   border-radius: 10px;
 }
 
