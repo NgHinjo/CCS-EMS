@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Admin - Events</title>
     <link rel="stylesheet" href="ADMIN_EVENTS.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -150,15 +150,22 @@
                   <button class="event-merch-button">Approve Request</button>
                   <button class="event-merch-button">Create Event</button>
                 </div>
-                <div class="event-merch-area"></div>
+                <div class="event-merch-area">
+                  <div class="event-merch-area-card" id="myBtn"></div>
+                  <div class="event-merch-area-card"></div>
+                  <div class="event-merch-area-card"></div>
+                </div>
                 <div id="event-merch-text">
                   Merchandise
                   <div class="event-button-area">
                     <button class="event-merch-button">Merch Archive</button>
                     <button class="event-merch-button">Approve Merch</button>
-                    <button id="myBtn">Try</button>
                   </div>
-                  <div class="event-merch-area"></div>
+                  <div class="event-merch-area">
+                    <div class="event-merch-area-card"></div>
+                    <div class="event-merch-area-card"></div>
+                    <div class="event-merch-area-card"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -173,10 +180,20 @@
     <!-----------VIEW EVENT------------>
 
     <div id="myModal" class="modal">
-      <div class="modal-content">      
-        <span class="close">&times;</span>  
-        <img src="IMAGES/cryingcatmeme.jpg" alt="Event Image" class="event-image"/>   
-
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img
+          src="IMAGES/cryingcatmeme.jpg"
+          alt="Event Image"
+          class="event-image"
+        />
+        <h1 style="font-family: Poppins">ICT Congress 2024</h1>
+        <p style="font-family: Poppins">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          accusamus sequi, magnam incidunt dolor soluta laudantium earum
+          obcaecati reprehenderit ratione illo quam, expedita repellendus ex
+          quos deserunt ullam labore consequuntur?
+        </p>
       </div>
     </div>
     <script src="ADMIN_EVENTS.js"></script>
